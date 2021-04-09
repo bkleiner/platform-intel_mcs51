@@ -113,6 +113,10 @@ if env.get("SRC_BUILD_FLAGS"):
     project_sdcc_flags, _unparsed = _parseSdccFlags(env.get("SRC_BUILD_FLAGS"))
     env['SRC_BUILD_FLAGS'] = _unparsed
 
+if env.GetBuildType() == "debug":
+    env.Append(BUILD_UNFLAGS=["-Og", "-g2", "-ggdb2"])
+    env.Append(CFLAGS=["--debug"], LINKFLAGS=["--debug"])
+
 #
 # Target: Build executable and linkable firmware
 #
