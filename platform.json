@@ -5,11 +5,11 @@
   "homepage": "https://en.wikipedia.org/wiki/Intel_MCS-51",
   "license": "Apache-2.0",
   "keywords": [
-      "dev-platform",
-      "Intel",
-      "MCS-51",
-      "8051",
-      "CISC"
+    "dev-platform",
+    "Intel",
+    "MCS-51",
+    "8051",
+    "CISC"
   ],
   "engines": {
     "platformio": "^5"
@@ -23,7 +23,7 @@
     "toolchain-sdcc": {
       "type": "toolchain",
       "owner": "platformio",
-      "version": "~1.30804.10766"
+      "version": "~1.40100.0"
     },
     "tool-stcgal": {
       "type": "uploader",
